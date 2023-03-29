@@ -7,20 +7,21 @@
     <title>Vicious Cycles</title>
     <link rel="stylesheet" href="css/systems.css/">
     <style>
-          Body { width:70%;
+          Body { width:100%;
         margin:0 auto;
         font-family:verdana,sans-serif; 
-        background-color: seagreen;
+        background-color:  #E7FBFB;
  }
  h1 {text-align: center;
     font-weight: bold;
-    font-size: 10em;
-    font-family: sans-serif;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010B5B;
 }
 
     </style>
-    <style> img#biking1 {width: 3000px; 
-    height: 1500px;
+    <style> img#biking1 {width: 1000px; 
+    height: 600px;
     display: block;
     float: center;
     align-content: center;
@@ -30,32 +31,47 @@
     box-shadow: 5px 5px #888888; 
     margin-right: auto; margin-bottom: auto;
     margin-left: auto; margin-top: auto;
-    border: 5px solid#000;
+    
 }
 
     .nav-items {
-  background-color: #333;
+  background-color: seagreen;
   overflow: hidden;
 }
 
 .nav-items a {
   float: left;
-  color: #f2f2f2;
+  color: whitesmoke;
   text-align: center;
   padding: 35px 16px;
   text-decoration: none;
-  font-size: 3em;
+  font-size: 1em;
+  
 }
 
-
 .nav-items a:hover {
-  background-color: #ddd;
+  background-color: black;
   color: black;
+  opacity: 40%;
 }
 
 .nav-items a.active {
   background-color: #04AA6D;
   color: white;
+}
+.container {
+  position: relative;
+  text-align: right;
+  color: black;
+}
+.top-right {
+  position: absolute;
+  top: 100px;
+  right: 50px; 
+  font-family: helvetica;
+  font-size: 2em;
+  float: left;
+
 }
     </style>
 </head>
@@ -63,16 +79,17 @@
     <header> <h1>Vicious Cycles</h1> </header>
     <header class="header">
         <nav class="nav-items">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Shop</a>
-          <a href="#">Custom Builds</a>
-          <a href="#">Contact Us</a>
+          <a href="index.html">Home</a>
+          <a href="About Us.html">About Us</a>
+          <a href="Shop.html">Shop</a>
+          <a href="Custom Builds.html">Custom Builds</a>
+          <a href="Contact Us.html">Contact Us</a>
         </nav>
-    
-        <p> <img src="images/biking1.jpg" alt="Vicious Cycles" id="biking1"></p>
+          <p><div class="container"> 
+            <img src="images/biking1.jpg" alt="Vicious Cycles" id="biking1">
+        <div class="top-right">"Ride as much or as little, <br> as long or as short as you feel. <br> But ride." </div></p>
+        <p><h2>The best bike shop in the triangle area.</h2></p>
         </header>
-      
-    
+     
 </body>
 </html>
